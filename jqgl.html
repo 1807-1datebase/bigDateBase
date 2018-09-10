@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>集群管理</title>
+<link rel="stylesheet" href="css/jqgl.css">
+</head>
+<body>
+	
+	<div class="Ndhz"> 
+        <div class="Ndsjpt">
+        	<div class="Ntp">
+        		<div class="Nyyk"><img src="img/youyike.png" alt=""></div>
+        		<div class="Nz"><p>大数据实验平台</p></div>
+        	</div>
+        	<div class="Np">
+        		<div class="Ntx"><img src="img/touxiang.png" alt=""></div>
+        		<div class="Ny"><p>管理员身份&nbsp;&or;</p></div>
+        	</div>
+
+        </div>
+        <div class="Nnr">
+        <div class="Nxxk">
+        	<ul>
+        		<li class="active">集群管理</li>
+        		<li>学习资料</li>
+        		<li>分类管理</li>
+        		<li>账户管理</li>
+        		<li>资源管理</li>
+        		<li>购买记录</li>
+        	</ul>
+        </div>
+        <div class="Nh">
+            <div class="Nzhong">
+        	   <div class="Nwu">
+        		  <b>节点数：</b><span>5</span>
+        	   </div>
+        	   <div class="Nmima">
+        		  <span>节点密码：</span><input type="text" placeholder="zmhodws865">
+        	   </div>
+        	   <button>提交</button>
+            </div>
+            <div class="lss_master">
+                <ul>
+                    <li>
+                        <p>master</p>
+                        <div class="lss_nr">
+                            <h4><span>5</span>核</h4>
+                            <h4><span>5G</span>内存</h4>
+                            <h4><span>20G</span>存储</h4>
+                        </div>
+                        
+                    </li>
+                    <li>
+                         <p>master</p>
+                        <div class="lss_nr">
+                            <h4><span>5</span>核</h4>
+                            <h4><span>5G</span>内存</h4>
+                            <h4><span>20G</span>存储</h4>
+                        </div>
+                    </li>
+                    <li>
+                         <p>master</p>
+                        <div class="lss_nr">
+                            <h4><span>5</span>核</h4>
+                            <h4><span>5G</span>内存</h4>
+                            <h4><span>20G</span>存储</h4>
+                        </div>
+                    </li>
+                    <li>
+                         <p>master</p>
+                        <div class="lss_nr">
+                            <h4><span>5</span>核</h4>
+                            <h4><span>5G</span>内存</h4>
+                            <h4><span>20G</span>存储</h4>
+                        </div>
+                    </li>
+                    <li>
+                         <p>master</p>
+                        <div class="lss_nr">
+                            <h4><span>5</span>核</h4>
+                            <h4><span>5G</span>内存</h4>
+                            <h4><span>20G</span>存储</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lss_condition">
+                <div class="lss_yi">
+                    <div class="lss_shu"></div>
+                    <h4>实验环境</h4>
+                </div>
+                <h5>大数据实验环境 包含全部组件集群</h5>
+                <h3>（hadoop,hbase,hive,spark,storm）</h3>
+            </div>
+     </div>
+    </div>
+     <div class="Ndibu">c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有</div>
+	 </div>
+     <div class="lss_tijiao">
+        <div class="lss_cover"></div>
+        <div class="lss_alert">
+         <div class="lss_top">
+             <p>创建集群</p>
+             <h4>×</h4>
+         </div>
+         <div class="lss_center">
+             <h4>确定后将要创建包含全部组件集群</h4>
+         </div>
+         <div class="lss_bottom">
+             <a href="jqgl3.html"><div class="bnt1">确定</div></a>
+             <div class="bnt2">取消</div>
+         </div>
+     </div>
+     </div>
+</body>
+</html>
+<script>
+    let btn=document.querySelector("button");
+    let cover=document.querySelector(".lss_tijiao");
+    let cha=document.querySelector(".lss_tijiao .lss_top h4");
+    let yes=document.querySelector(".lss_tijiao .lss_bottom .bnt1")
+    let no=document.querySelector(".lss_tijiao .lss_bottom .bnt2")
+    console.log(btn,cover,cha,yes,no);
+    btn.onclick=function(){
+        cover.style.display="block";
+    }
+    cha.onclick=function(){
+        cover.style.display="none";
+    }
+    yes.onclick=function(){
+        cover.style.display="none";
+    }
+    no.onclick=function(){
+        cover.style.display="none";
+    }
+</script>
