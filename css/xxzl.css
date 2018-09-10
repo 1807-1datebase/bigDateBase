@@ -1,0 +1,227 @@
+/*
+* @Author: nanjiao
+* @Date:   2018-09-08 09:32:48
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-08 18:10:57
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "苹方";
+    list-style: none;
+    text-decoration: none;
+}
+.Ndhz{
+	width: 1366px;
+	height: 768px;
+	/* background-color: #4381E6; */
+	background-color: #F1F4F9;
+	margin: 0 auto;
+}
+.Ndsjpt{
+	width: 1366px;
+	height: 58px;
+	background-color: #4381E6;
+}
+.Ntp{
+	width: 231px;
+	height: 100%;
+	position: relative;
+	left: 50px;
+	float: left;
+}
+.Nyyk{
+	width: 30px;
+	height: 30px;
+	position: relative;
+
+	top: 10px;
+}
+.Nz {
+	width: 160px;
+	height: 30px;
+	position: relative;
+	left: 50px;
+	top: -12px;
+}
+.Nz p{
+  font-size: 18px;
+  color: white;
+  /* font-family: 黑体; */
+}
+.Np{
+	width: 173px;
+	height: 100%;
+	float: right;
+	
+}
+.Ntx img{
+	width: 28px;
+	height: 28px;
+	position: relative;
+    float:left;
+	top: 20px;
+	left: 10px;
+}
+
+.Ny {
+	width: 160px;
+	height: 30px;
+	position: relative;
+	float: right;
+	left: 40px;
+	bottom: 5px;
+	
+}
+.Ny p{
+  font-size: 14px;
+  color: #9BB7F0;
+  /* font-family: 黑体; */
+}
+.Nxxk{
+	width: 182px;
+	height: 660px;
+	float: left;
+    background: #fff;
+    /* box-shadow: 0 0 0 1px #E7EAEF; */
+
+}
+.Nxxk ul li{
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid #F1F4F9;
+	border-bottom: 1px solid #F1F4F9;
+	color: #8D8D8D;
+	text-align: center;
+	line-height: 40px;
+}
+.Nxxk .active{
+	background: #ECF2FC;
+	color: #4381E6;
+	border-right: 2px solid #4381E6;
+}
+.Nh{
+	float: right;
+	width: 1184px;
+	height: 660px;
+	/* background: red; */
+}
+.Nzhong button{
+	width: 80px;
+	height: 28px;
+	/* margin-left: 1045px; */
+	line-height:30px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	background: #4381E6;
+	position: absolute;
+	top:86px;
+
+	right: 120px;
+
+}
+.Nnr{
+	width: 100%;
+	height: 660px;
+}
+.Ndibu{
+	
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	color: #C6C6C6;
+	text-align: center;
+	font-size: 12px;
+	line-height: 50px;
+	z-index: 999;
+}
+/* 学习资料 */
+.Pj_study{
+	width: 1157px;
+	height: 400px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.Pj_study ul li{
+	width: 376px;
+	height: 214px;
+	background:#fff;
+	border-radius: 5px;
+	float: left;
+	margin-right: 12px;
+	margin-bottom:12px; 
+}
+.Pj_study ul li:nth-child(2) .Pj_study_tm{
+	width: 180px;
+}
+.Pj_study ul li:nth-child(3){
+	margin-right: 0;
+}
+.Pj_study_tm{
+	width: 81px;
+	height: 15px;
+	margin: 0 auto;
+	margin-top: 24px;
+	padding-bottom: 35px;
+}
+.Pj_study ul li .left{
+	font-size: 14px;
+	color: #5a94fe;
+	float: left;
+	padding-right: 2px;
+}
+.Pj_study ul li h4{
+	font-size: 14px;
+	color: #8d8d8d;
+	float: left;
+	font-weight: bolder;
+}
+.Pj_study ul li .right{
+	font-size: 14px;
+	color: #5a94fe;
+	float: right;
+}
+.Pj_study_dl{
+	text-align: center;
+	line-height: 24px;
+}
+.Pj_study_dl b{
+	font-size: 14px;
+	color: #b8b8b8;
+	line-height: 20px;
+	font-weight:bold;
+	/* text-align: center; */
+}
+.Pj_study_dl span{
+	font-size: 18px;
+	color: #4381e6;
+	font-weight: bold;
+	/* line-height: 20px; */
+}
+.Pj_study_dl p{
+	font-size: 14px;
+	color: #b8b8b8;
+	
+	/* line-height: 20px; */
+	font-weight:bold;
+}
+.Pj_study_btn{
+	width: 111px;
+	height: 29px;
+	/* margin-left: 1045px; */
+	line-height:30px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 3px;
+	border: none;
+	background: #4381E6;
+	display: block;
+	margin: 0 auto;
+	margin-top: 54px;
+}
+/* 学习资料结束 */
