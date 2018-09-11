@@ -299,6 +299,7 @@
     font-size: 14px;
     border:none;
     outline: none;
+    cursor: pointer;
 }
 
 .GZC_table .row .dr .return {
