@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公共样式</title>
+    <link rel="stylesheet" href="css/gg-zyx.css">
+
+    <!--<link rel="stylesheet" href="css/ziyuan3.css">-->
+
+</head>
+<body>
+
+<div class="Ndhz">
+    <div class="Ndsjpt">
+        <div class="Ntp">
+            <div class="Nyyk"><img src="img/youyike.png" alt=""></div>
+            <div class="Nz"><p>大数据实验平台</p></div>
+        </div>
+        <div class="Np">
+            <img src="img/touxiang.png" alt="">
+            <div class="Ny"><p>管理员身份&nbsp;&or;</p></div>
+        </div>
+
+    </div>
+    <div class="Nnr">
+        <div class="Nxxk">
+            <ul>
+                <li class="active">集群管理</li>
+                <li>学习资料</li>
+                <li>分类管理</li>
+                <li>账户管理</li>
+                <li>资源管理</li>
+                <li>购买记录</li>
+            </ul>
+        </div>
+        <div class="Nh">
+            <div class="Cyj_content">
+                <div class="Cyj_title">
+                    <h2>资源管理</h2>
+                    <div class="Cyj_title2">
+                        <img class="tu1" src="img/形状3@2x.png" height="200" width="200"/>
+                        <img class="tu2" src="img/矩形11拷贝@2x.png" height="38" width="77"/>
+                    </div>
+             </div>
+                <div class="Cyj_title3">
+                    <h2>资源管理</h2>
+                    <div class="Cyj_title4">
+
+                        <img class="tu3" src="img/形状3拷贝@2x.png" height="200" width="200"/>
+                        <img class="tu4" src="img/矩形11拷贝2@2x.png" height="62" width="99"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Zyx_content_two">
+                <table>
+                    <tr>
+                        <td><input onclick="if(this.checked==true) { checkAll('test'); } else { clearAll('test'); }" type="checkbox" value="" name="test" title="全选/取消"/></td>
+                        <td>登录名</td>
+                        <td>姓名</td>
+                        <td>学号</td>
+                        <td>性别</td>
+                        <td>集群类别</td>
+                        <td>身份</td>
+                        <td>院校</td>
+                        <td class="Zyx_sou">操作</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="a" name="test"/></td>
+                        <td>张晓明</td>
+                        <td>张晓明</td>
+                        <td>123456789</td>
+                        <td>男</td>
+                        <td>包含全部组件集群</td>
+                        <td>老师</td>
+                        <td>太原理工大学</td>
+
+                        <td class="Zyx_sou"><button >销毁集群</button></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="a" name="test"/></td>
+                        <td>张晓明</td>
+                        <td>张晓明</td>
+                        <td>123456789</td>
+                        <td>男</td>
+                        <td>包含全部组件集群</td>
+                        <td>老师</td>
+                        <td>太原理工大学</td>
+
+                        <td class="Zyx_sou"><button >销毁集群</button></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="a" name="test"/></td>
+                        <td class="last">张晓明</td>
+                        <td class="last">张晓明</td>
+                        <td class="last">123456789</td>
+                        <td class="last">男</td>
+                        <td class="last">包含全部组件集群</td>
+                        <td class="last">老师</td>
+                        <td class="last">太原理工大学</td>
+
+                        <td class="Zyx_sou last"><button >销毁集群</button></td>
+
+                    </tr>
+
+                </table>
+                <div class="Zyx_content_three">
+                    <div class="Zyx_box1"><h3>上一页</h3></div>
+                    <div class="Zyx_box2 hot ac"><h3>1</h3></div>
+                    <div class="Zyx_box2"><h3>2</h3></div>
+                    <div class="Zyx_box2"><h3>3</h3></div>
+                    <div class="Zyx_box">...</div>
+                    <div class="Zyx_box2"><h3>9</h3></div>
+                    <div class="Zyx_box2"><h3>10</h3></div>
+                    <div class="Zyx_box1"><h3>下一页</h3></div>
+                    <div class="Zyx_box3"><h3>尾页</h3></div>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+
+    <div class="Ndibu">c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+
+    function selectAll()
+    {
+        if(this.checked==true) {
+            checkAll("test");
+        }
+        else {
+            clearAll("test");
+        }
+    }
+    function checkAll(name)
+    {
+        var el = document.getElementsByTagName("input");
+        var len = el.length;
+        for(var i=0; i<len; i++)
+        {
+            if((el[i].type=="checkbox") && (el[i].name==name))
+            {
+                el[i].checked = true;
+            }
+        }
+    }
+    function clearAll(name)
+    {
+        var el = document.getElementsByTagName("input");
+        var len = el.length;
+        for(var i=0; i<len; i++)
+        {
+            if((el[i].type=="checkbox") && (el[i].name==name))
+            {
+                el[i].checked = false;
+            }
+        }
+    }
+
+</script>
