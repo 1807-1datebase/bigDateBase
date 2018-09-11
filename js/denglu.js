@@ -18,7 +18,7 @@ window.onload=function(){
     console.log(user.value,pass.value);
     btn .onclick=function(){
         if(user.value=="zcy"  &&  pass.value=="123456"){
-            window.open("index.html");
+            window.open("jqgl.html");
         }else if(user.value!="zcy"  &&  pass.value=="123456"){
             tishizi1.style.display="block";
             tishifuhao1.style.display="block";
