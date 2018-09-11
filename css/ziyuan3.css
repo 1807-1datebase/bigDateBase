@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   nanjiao
-* @Last Modified time: 2018-09-09 10:34:06
+* @Last Modified by:   xiaojiejieJ
+* @Last Modified time: 2018-09-11 12:01:51
 */
 *{
     margin: 0;
@@ -13,14 +13,14 @@
     text-decoration: none;
 }
 .Ndhz{
-	width: 1336px;
+	width: 1366px;
 	/* height: 768px; */
 	/* background-color: #4381E6; */
 	background-color: #F1F4F9;
 	margin: 0 auto;
 }
 .Ndsjpt{
-	width: 1336px;
+	width: 1366px;
 	height: 58px;
 	background-color: #4381E6;
 	 padding-left:50px; 
@@ -102,6 +102,11 @@
 	line-height: 40px;
 }
 .Nxxk .active{
+	background: #ECF2FC;
+	color: #4381E6;
+	border-right: 2px solid #4381E6;
+}
+.Nxxk ul li:hover{
 	background: #ECF2FC;
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
@@ -328,7 +333,7 @@
 .Zyx_content4{
 	/*text-align: center;*/
 	border-radius: 5px;
-	margin-right: 30px;
+	margin-right: 130px;
 }
 .Zyx_content4 h3{
 	color: #ffffff;

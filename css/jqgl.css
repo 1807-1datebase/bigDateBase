@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   我的文档
-* @Last Modified time: 2018-09-10 14:36:18
+* @Last Modified by:   xiaojiejieJ
+* @Last Modified time: 2018-09-11 11:20:22
 */
 *{
     margin: 0;
@@ -14,7 +14,7 @@
 }
 .Ndhz{
 	width: 1366px;
-	height: 768px;
+	/* height: 768px; */
 	/* background-color: #4381E6; */
 	background-color: #F1F4F9;
 	margin: 0 auto;
@@ -23,27 +23,26 @@
 	width: 1366px;
 	height: 58px;
 	background-color: #4381E6;
+	 padding-left:50px; 
 }
 .Ntp{
-	width: 231px;
+	width: 210px;
 	height: 100%;
-	position: relative;
 	left: 50px;
 	float: left;
 }
 .Nyyk{
 	width: 30px;
 	height: 30px;
-	position: relative;
-
-	top: 10px;
+    margin-right: 10px;
+	margin-top: 10px; 
+	float: left;
 }
 .Nz {
 	width: 160px;
 	height: 30px;
-	position: relative;
-	left: 50px;
-	top: -12px;
+	float: right;
+	line-height: 58px;
 }
 .Nz p{
   font-size: 18px;
@@ -51,37 +50,43 @@
   /* font-family: 黑体; */
 }
 .Np{
-	width: 173px;
+	width: 190px;
 	height: 100%;
 	float: right;
+	position: relative;
 	
 }
-.Ntx img{
+
+.Np img{
+	
 	width: 28px;
 	height: 28px;
-	position: relative;
-    float:left;
-	top: 20px;
-	left: 10px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto 0;
+
 }
 
 .Ny {
 	width: 160px;
 	height: 30px;
-	position: relative;
 	float: right;
-	left: 40px;
-	bottom: 5px;
+
 	
 }
 .Ny p{
   font-size: 14px;
   color: #9BB7F0;
-  /* font-family: 黑体; */
+  line-height: 58px;
+
 }
 .Nxxk{
 	width: 182px;
-	height: 660px;
+	height: 630px;
 	float: left;
     background: #fff;
     /* box-shadow: 0 0 0 1px #E7EAEF; */
@@ -101,10 +106,15 @@
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
 }
+.Nxxk ul li:hover{
+	background: #ECF2FC;
+	color: #4381E6;
+	border-right: 2px solid #4381E6;
+}
 .Nh{
 	float: right;
 	width: 1184px;
-	height: 660px;
+    height: 630px;
 	/* background: red; */
 }
 .Nzhong{
@@ -182,7 +192,7 @@ button{
 }
 .Nnr{
 	width: 100%;
-	height: 660px;
+	height: 630px;
 }
 .Ndibu{
 	
@@ -192,7 +202,7 @@ button{
 	color: #C6C6C6;
 	text-align: center;
 	font-size: 12px;
-	line-height: 50px;
+	line-height: 70px;
 	z-index: 999;
 }
 .lss_master{

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>公共样式</title>
-    <link rel="stylesheet" href="css/usermanage2.css">
-
+    <link rel="stylesheet" href="css/2.css">
 
 </head>
 <body>
@@ -24,12 +23,12 @@
     <div class="Nnr">
         <div class="Nxxk">
             <ul>
-                 <li><a href="jqgl.html">集群管理</a></li>
-                <li><a href="xuexiziliao.html">学习资料</a></li>
-                <li><a href="fenleiguanli.html">分类管理</a></li>
-                <li class="active"><a href="usermanage.html">账户管理</a></li>
-                <li><a href="ziyuanguanli1.html">资源管理</a></li>
-                <li><a href="goumai1.html">购买记录</a></li>
+                <li class="active"><a href="jqgl.html">集群管理</a></li>
+                <li class="xuexi"><a href="xuexiziliao.html">学习资料</a></li>
+                <li class="fenlei"><a href="fenleiguanli.html">分类管理</a></li>
+                <li class="zhanghu"><a href="usermanage.html">账户管理</a></li>
+                <li class="ziyuan"><a href="ziyuanguanli1.html">资源管理</a></li>
+                <li class="goumai"><a href="goumai1.html">购买记录</a></li>
             </ul>
         </div>
         <div class="Nh">
@@ -144,17 +143,12 @@
     let batch = document.querySelector(".batch");
     let news = document.querySelector(".new");
     let input = document.querySelectorAll(".GZC_table .form .b1 input");
-    let del=document.querySelector(".delete");
-    console.log(del);
     // console.log(batch, news, input);
-    del.onclick = function () {
-        window.open("usermanage.html","_self");
-    }
     batch.onclick = function () {
-        window.open("tankuang1.html","_self");
+        window.open("弹框.html","_self");
     }
     news.onclick = function () {
-        window.open("tankuang2.html","_self");
+        window.open("弹框2.html","_self");
     }
 
     function checkAll() {
