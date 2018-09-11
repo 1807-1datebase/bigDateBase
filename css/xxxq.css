@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   xiaojiejieJ
-* @Last Modified time: 2018-09-11 11:57:44
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-11 14:13:35
 */
 *{
     margin: 0;
@@ -98,11 +98,6 @@
 	list-style: none;
 }
 .Nxxk .active{
-	background: #ECF2FC;
-	color: #4381E6;
-	border-right: 2px solid #4381E6;
-}
-.Nxxk ul li:hover{
 	background: #ECF2FC;
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
@@ -235,6 +230,7 @@ button{
 	margin-top: 13px;
 	margin-left: 15px;
 	float: left;
+
 }
 .Pj_nav .Pj-lei{
 	width: 117px;
@@ -243,20 +239,31 @@ button{
 	font-size: 14px;
 	color: #7f7f7f;
 	font-weight: bolder;
-	padding-left: 15px;
+	padding-left: 11px;
 	text-align: left;
 	line-height: 40px;
 	list-style: none;
+	float: left;
+	/* position: relative; */
 }
 .Pj_nav .Pj-lei i{
-	display: none;
-}
-.Pj_nav .Pj-lei:hover i{
+	/* display: none; */
+	float: right;
+	margin-right: 15px;
+	
+	color:#fff;
+} 
+/* .Pj_nav .Pj-lei i:nth-child(1){
 	display: inline;
 }
-/* .Pj_nav_active2:hover{
-	color:#4381e6;
+/* .Pj_nav .Pj-lei:hover i{
+	display: inline;
 } */
+.Pj_nav_active2,i{
+	color:#4381e6;
+	display: inline;
+	border: 0;
+}
 .Pj_nav .Pj-lei:nth-child(1){
 	border-top: none;
 }
@@ -287,7 +294,7 @@ button{
 	line-height: 40px;
 	list-style: none;
 }
-.lbl hover{
+.lb1:hover{
 	color: #4381e6;
 
 }

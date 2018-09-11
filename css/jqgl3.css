@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   xiaojiejieJ
-* @Last Modified time: 2018-09-11 11:22:28
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-11 15:29:48
 */
 *{
     margin: 0;
@@ -86,7 +86,7 @@
 }
 .Nxxk{
 	width: 182px;
-	height: 630px;
+	height: 750px;
 	float: left;
     background: #fff;
     /* box-shadow: 0 0 0 1px #E7EAEF; */
@@ -114,7 +114,7 @@
 .Nh{
 	float: right;
 	width: 1184px;
-    height: 630px;
+    height: 750px;
 	/* background: red; */
 }
 .Nzhong{
@@ -127,7 +127,7 @@
 
 }
 .Nzhong .Nwu{
-	width: 80px;
+	width: 124px;
 	height: 100%;
 	margin-left: 30px;
     padding-top: 20px; 
@@ -135,15 +135,18 @@
 }
 .Nzhong .Nwu b{
 	line-height:20px; 
-	color: #B8B8B8;
-	font-size: 14px;
-	font-weight: normal;
+	color: #4381e6;
+	font-size: 20px;
+	font-weight: bold;
 }
 .Nzhong .Nwu  span{
     line-height:20px;
-	color: #4381E6;
-	font-size: 40px;
-    
+	color: #000;
+	opacity: 0.4;
+	font-size: 14px;
+	margin-left: 10px;
+	font-weight: bold;
+    float: left;
 }
 .Nzhong .Nmima {
 	margin-left: 220px;
@@ -192,7 +195,8 @@ button{
 }
 .Nnr{
 	width: 100%;
-	height: 630px;
+	height: 750px;
+	background: #f1f4f9;
 }
 .Ndibu{
 	
@@ -235,7 +239,7 @@ button{
 	margin-left: 12px;
 }
 .lss_center .yi{
-	width: 120px;
+	width: 130px;
 	height: 68px;
 	margin-left: 30px;
 }
@@ -326,7 +330,7 @@ button{
 	color: #ffbe63;
 }
 .lss_center .er ul li:nth-child(4){
-	width: 152px;
+	width: 160px;
 	height: 100%;
 }
 .lss_center .er ul li:nth-child(4) .kuang{

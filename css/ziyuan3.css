@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   xiaojiejieJ
-* @Last Modified time: 2018-09-11 12:01:51
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-11 17:56:12
 */
 *{
     margin: 0;
@@ -112,16 +112,16 @@
 	border-right: 2px solid #4381E6;
 }
 .Nh{
-	float: right;
-	width: 1134px;
+	float: left;
+	width: 1157px;
     height: 630px;
 	/* background: red; */
 }
 .Cyj_content{
-	width: 1118px;
+	width: 1142px;
 	/*height: 58px;*/
 	background: #fff;
-	border-radius: 5px;
+	border-radius: 4px;
 	margin-top: 13px;
 	margin-left: 15px;
 	padding:22px 20px 0 22px;
@@ -152,7 +152,7 @@
 	display: flex;
 	margin-top:20px;
 }
-.Cyj_search .h3{
+.Cyj_search .h2{
 	font-size: 12px;
 	margin-left: 22px;
 }
@@ -297,7 +297,7 @@
 
 }
 .Cyj_search h2{
-	font-size: 20px;
+	font-size: 14px;
 }
 .Zyx_content2{
 	width: 77px;
@@ -329,6 +329,12 @@
 	background-color: #4381e6;
 	position: absolute;
 	right: 0;
+	top: 100px;
+	border: none;
+	padding: 10px 0;
+	color: #fff;
+	outline: none;
+	font-size: 14px;
 }
 .Zyx_content4{
 	/*text-align: center;*/
@@ -338,6 +344,9 @@
 .Zyx_content4 h3{
 	color: #ffffff;
 
+}
+select{
+	outline: none;
 }
 .Zyx_content_two{
 	/*width: 1118px;*/
@@ -349,10 +358,11 @@
 	padding: 22px 20px 0 22px;
 	box-sizing: border-box;
 	color: #8d8d8d;
+	font-size: 14px;
 }
 .Zyx_content_two table tr td{
 	border:1px solid #f4f4f4;
-	padding:15px 11px;
+	padding:15px 17px;
 	text-align: center;
 	border-bottom:none;
 	border-right:none;
@@ -412,8 +422,42 @@ border-right: 1px solid #f4f4f4;
 .Zyx_sou button{
 	color: #33bffb;
 }
-
-
+.Cyj_bottom ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:40px 20px;
+	box-sizing: border-box;
+}
+.Cyj_bottom ul li{
+	width:29px;
+	height:29px;
+	/*background-color: #4381E6;*/
+	/*color:#fff;*/
+	text-align: center;
+	line-height: 29px;
+	border:1px solid #f4f4f4;
+	margin:0 8px;
+	/*padding:0 10px;*/
+	border-radius: 4px;
+}
+.Cyj_bottom ul li:nth-child(5){
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.Cyj_bottom ul .Cyj_one{
+	width:89px;
+	height:29px;
+	line-height: 29px;
+	text-align: center;
+}
+.Cyj_bottom ul .Cyj_two{
+	width:81px;
+	height:29px;
+	line-height: 29px;
+	text-align: center;
+}
 
 
 
