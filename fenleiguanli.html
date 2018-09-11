@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类管理</title>
+    <link rel="stylesheet" href="css/fenleiguanli.css">
+</head>
+<body>
+
+<div class="Ndhz">
+    <div class="Ndsjpt">
+        <div class="Ntp">
+            <div class="Nyyk"><img src="img/youyike.png" alt=""></div>
+            <div class="Nz"><p>大数据实验平台</p></div>
+        </div>
+        <div class="Np">
+            <img src="img/touxiang.png" alt="">
+            <div class="Ny"><p>管理员身份&nbsp;&or;</p></div>
+        </div>
+
+    </div>
+    <div class="Nnr">
+        <div class="Nxxk">
+            <ul>
+                <li class="active">集群管理</li>
+                <li>学习资料</li>
+                <li>分类管理</li>
+                <li>账户管理</li>
+                <li>资源管理</li>
+                <li>购买记录</li>
+            </ul>
+        </div>
+        <div class="Cyj_right">
+            <div class="Cyj_content">
+                <div class="Cyj_title">
+                    <h2>分类管理</h2>
+                </div>
+                <div class="Cyj_search">
+                    <h3 style="font-size: 14px;">名称</h3>
+                    <input type="text">
+                    <button class="Cyj_sou">搜索</button>
+                    <button class="Cyj_add">添加</button>
+                </div>
+                <div class="Cyj_center">
+                    <table cellspacing="0" >
+                        <tr>
+                            <td>序号</td>
+                            <td>名称</td>
+                            <td>介绍</td>
+                            <td>父类型</td>
+                            <td class="Cyj_first">操作</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>实验一  基本操作实验</td>
+                            <td>熟悉大数据实验一体机并了解如何搭建集群;</td>
+                            <td>实验手册</td>
+
+                            <td class="Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                                <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>实验一  基本操作实验</td>
+                            <td>熟悉大数据实验一体机并了解如何搭建集群;</td>
+                            <td>教材配套PPT</td>
+                            <td class="Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                                <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
+                        </tr>
+                        <tr>
+                            <td class="Cyj_last">3</td>
+                            <td class="Cyj_last">实验一  基本操作实验</td>
+                            <td class="Cyj_last">熟悉大数据实验一体机并了解如何搭建集群;</td>
+                            <td class="Cyj_last">教材配套PPT</td>
+                            <td class="Cyj_last Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                                <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Cyj_bottom">
+                    <ul>
+                        <li class="Cyj_one">上一页</li>
+                        <li style="background-color: #4381e6;color: #fff">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li style="border:none;">......</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li class="Cyj_one">下一页</li>
+                        <li class="Cyj_two">尾页</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Ndibu">c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有</div>
+</div>
+<div class="Cyj_zhezhao">
+    <h2>分类添加
+        <img style="cursor: pointer;" src="img/close.png" alt="">
+    </h2>
+    <ul>
+        <li>
+            <h3>请选择分类级别
+                <input type="checkbox">一级
+                <input type="checkbox">二级
+                <input type="checkbox">三级
+            </h3>
+        </li>
+        <!--<li><h3></h3>-->
+            <!--<button style="margin-left: 8px;">上传</button>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<h3>介绍</h3><textarea name="" id="" cols="30" rows="10"></textarea>-->
+        <!--</li>-->
+        <li>
+            <h3>一级分类</h3>
+            <!--<input type="text">-->
+            <select name="" id=""  style="color: rgba(0,0,0,0.3);">
+                <option value="">实验手册</option>
+                <option value="">材料配套PPT</option>
+                <option value="">实验视频</option>
+                <option value="">相关下载</option>
+            </select>
+        </li>
+        <li><h3>二级分类</h3><select name="" id=""  style="color: rgba(0,0,0,0.3);">
+            <option value="">实验手册</option>
+        </select></li>
+        <li><h3>三级分类</h3><select name="" id=""  style="color: rgba(0,0,0,0.3);">
+            <option value="">大数据实验一体化基本</option>
+        </select></li>
+        <li><h3>添   加</h3></li>
+    </ul>
+</div>
+<div class="Cyj_zhezhao">
+    <h2>资料修改
+        <img style="cursor: pointer;" src="img/close.png" alt="">
+    </h2>
+    <ul>
+        <li>
+            <h3>名称</h3><input type="text">
+        </li>
+        <li><h3></h3>
+            <button style="margin-left: 8px;">上传</button>
+        </li>
+        <li>
+            <h3>介绍</h3><textarea name="" id="" cols="30" rows="10"></textarea>
+        </li>
+        <li><h3>一级分类</h3>
+            <select name="" id=""  style="color: rgba(0,0,0,0.3);">
+            <option value="">实验手册</option>
+            <option value="">材料配套PPT</option>
+            <option value="">实验视频</option>
+            <option value="">相关下载</option>
+        </select></li>
+        <li><h3>二级分类</h3>
+            <select name="" id=""  style="color: rgba(0,0,0,0.3);">
+            <option value="">基本操作</option>
+        </select></li>
+        <li><h3>三级分类</h3>
+            <select name="" id=""  style="color: rgba(0,0,0,0.3);">
+            <option value="">大数据实验一体化基本</option>
+        </select></li>
+        <li><h3>修 改</h3></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    let add=document.querySelector(".Cyj_search .Cyj_add");
+    let change=document.querySelectorAll(".Cyj_gai");
+    let zhezhao=document.querySelectorAll(".Cyj_zhezhao");
+    let close=document.querySelectorAll(".Cyj_zhezhao h2 img");
+    add.onclick=function () {
+        zhezhao[0].style.display="block";
+        close[0].onclick=function () {
+            zhezhao[0].style.display="none";
+        }
+    }
+    // change[0].onclick=function () {
+    //     zhezhao[1].style.display="block";
+    //     close[1].onclick=function () {
+    //         zhezhao[1].style.display="none";
+    //     }
+    // }
+</script>
