@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公共样式</title>
+    <link rel="stylesheet" href="css/gg.css">
+</head>
+<body>
+
+<div class="Ndhz">
+    <div class="Ndsjpt">
+        <div class="Ntp">
+            <div class="Nyyk"><img src="img/youyike.png" alt=""></div>
+            <div class="Nz"><p>大数据实验平台</p></div>
+        </div>
+        <div class="Np">
+            <img src="img/touxiang.png" alt="">
+            <div class="Ny"><p>管理员身份&nbsp;&or;</p></div>
+        </div>
+
+    </div>
+    <div class="Nnr">
+        <div class="Nxxk">
+            <ul>
+                <li class="active">集群管理</li>
+                <li>学习资料</li>
+                <li>分类管理</li>
+                <li>账户管理</li>
+                <li>资源管理</li>
+                <li>购买记录</li>
+            </ul>
+        </div>
+        <div class="Nh">
+            <div class="Cyj_content">
+                <div class="Cyj_title">
+                    <h2>账户管理/用户列表</h2>
+                </div>
+                <div class="GZC_big-box">
+                    <div class="GZC_login_name">
+                        <select name="登录名" id="登录名">
+                            <option value="">登录名</option>
+                            <option value="">学号</option>
+                        </select>
+                        <div class="center">
+                            <input type="text">
+                        </div>
+                        <button>搜索学生</button>
+                    </div>
+                    <div class="choose">
+                        <button class="new">新建学生</button>
+                        <button class="batch">批量导入</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GZC_table">
+                <div class="row">
+                    <div class="person">
+                        <img src="img/QQ图片20180906162255.png" alt="">
+                        <h3>学生用户</h3></div>
+                    <div class="dr">
+                        <button class="delete">删除</button>
+                        <button class="return">刷新</button>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="b1 a"><input type="checkbox" name="ifAll" id="ifAll" onClick="checkAll()"></div>
+                    <div class="b2 a">登录名</div>
+                    <div class="b3 a">姓名</div>
+                    <div class="b4 a">学号</div>
+                    <div class="b5 a">性别</div>
+                    <div class="b6 a">专业(系)</div>
+                    <div class="b7 a">院校</div>
+                    <div class="b8 a">班级</div>
+                    <div class="b9 a">操作</div>
+                </div>
+                <div class="big-form">没有找到匹配的记录！</div>
+                <div class="page">
+                    <div class="fenye">
+                        <div class="on">上一页</div>
+                        <div class="one">1</div>
+                        <div class="two">2</div>
+                        <div class="three">3</div>
+                        <span>.....</span>
+                        <div class="nine">9</div>
+                        <div class="ten">10</div>
+                        <div class="down">下一页</div>
+                        <div class="end">尾页</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="Ndibu">c 2017-2018 http://sxuek.com山西优逸客科技有限公司版权所有</div>
+</div>
+
+</body>
+</html>
+<script>
+    let batch = document.querySelector(".batch");
+    let news = document.querySelector(".new");
+    console.log(batch, news);
+    batch.onclick = function () {
+        window.open("弹框.html","_self");
+    }
+    news.onclick = function () {
+        window.open("弹框2.html","_self");
+    }
+    function checkAll() {
+        for (var i = 0; i < document.getElementsByName("selectFlag").length; i++) {
+            document.getElementsByName("selectFlag")[i].checked = document.getElementById("ifAll").checked;
+        }
+    }
+</script>
