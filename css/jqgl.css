@@ -94,15 +94,16 @@
 	width: 182px;
 	height: 630px;
 	float: left;
-    background: #fff;
-    /* box-shadow: 0 0 0 1px #E7EAEF; */
+	background: #fff;
+	/* box-shadow: 0 0 0 1px #E7EAEF; */
 
 }
 .Nxxk ul li{
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #F1F4F9;
-	border-bottom: 1px solid #F1F4F9;
+	border-top: 0.3px solid #F4F4F4;
+	border-bottom: 0.3px solid #F4F4F4;
+	border-right: 2px solid white;
 	color: #8D8D8D;
 	text-align: center;
 	line-height: 40px;
@@ -112,11 +113,18 @@
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
 }
+.Nxxk .active a{
+	color: #4381E6;
+}
+.Nxxk ul li a{
+	color: #8D8D8D;
+}
 .Nxxk ul li:hover{
 	background: #ECF2FC;
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
 }
+
 .Nh{
 	float: right;
 	width: 1184px;
