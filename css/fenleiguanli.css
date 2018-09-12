@@ -2,7 +2,7 @@
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-11 17:20:31
+* @Last Modified time: 2018-09-12 21:07:24
 */
 *{
     margin: 0;
@@ -104,6 +104,17 @@ h2,h3{
 	text-align: center;
 	line-height: 40px;
 }
+
+
+.Nxxk .active a{
+	color: #4381E6;
+}
+.Nxxk ul li a{
+	color: #8D8D8D;
+}
+
+
+
 .Nxxk .active{
 	background: #ECF2FC;
 	color: #4381E6;

@@ -2,7 +2,7 @@
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
 * @Last Modified by:   Dell
-* @Last Modified time: 2018-09-11 15:29:48
+* @Last Modified time: 2018-09-12 21:12:29
 */
 *{
     margin: 0;
@@ -43,6 +43,12 @@
 	height: 30px;
 	float: right;
 	line-height: 58px;
+}
+.Nxxk .active a{
+	color: #4381E6;
+}
+.Nxxk ul li a{
+	color: #8D8D8D;
 }
 .Nz p{
   font-size: 18px;
