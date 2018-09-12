@@ -56,7 +56,7 @@
                             <td>熟悉大数据实验一体机并了解如何搭建集群;</td>
                             <td>实验手册</td>
 
-                            <td class="Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                            <td class="Cyj_first"><button class="Cyj_del" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
                                 <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
                         </tr>
                         <tr>
@@ -64,7 +64,7 @@
                             <td>实验一  基本操作实验</td>
                             <td>熟悉大数据实验一体机并了解如何搭建集群;</td>
                             <td>教材配套PPT</td>
-                            <td class="Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                            <td class="Cyj_first"><button class="Cyj_del" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
                                 <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
                         </tr>
                         <tr>
@@ -72,7 +72,7 @@
                             <td class="Cyj_last">实验一  基本操作实验</td>
                             <td class="Cyj_last">熟悉大数据实验一体机并了解如何搭建集群;</td>
                             <td class="Cyj_last">教材配套PPT</td>
-                            <td class="Cyj_last Cyj_first"><button class="Cyj_sou" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
+                            <td class="Cyj_last Cyj_first"><button class="Cyj_del" style="background-color: #f4f4f4; margin-right:20px;">删除</button>
                                 <button class="Cyj_gai" style="cursor: pointer">修改</button></td>
                         </tr>
                     </table>
@@ -101,10 +101,10 @@
     </h2>
     <ul>
         <li>
-            <h3>请选择分类级别
-                <input type="checkbox">一级
-                <input type="checkbox">二级
-                <input type="checkbox">三级
+            <h3 style="font-weight: normal">请选择分类级别
+                <input class="checkbox" type="checkbox">一级
+                <input class="checkbox" type="checkbox">二级
+                <input class="checkbox" type="checkbox">三级
             </h3>
         </li>
         <!--<li><h3></h3>-->
@@ -113,22 +113,32 @@
         <!--<li>-->
             <!--<h3>介绍</h3><textarea name="" id="" cols="30" rows="10"></textarea>-->
         <!--</li>-->
-        <li>
-            <h3>一级分类</h3>
-            <!--<input type="text">-->
+        <li class="one" style="display: none;">
+            <div  style="display: flex">
+                <h3 style="font-weight: normal">一级分类</h3>
+                <!--<input type="text">-->
+                <select name="" id=""  style="color: rgba(0,0,0,0.3);">
+                    <option value="">实验手册</option>
+                    <option value="">材料配套PPT</option>
+                    <option value="">实验视频</option>
+                    <option value="">相关下载</option>
+                </select>
+            </div>
+        </li>
+        <li class="one" style="display: none;">
+            <div style="display: flex">
+            <h3 style="font-weight: normal">二级分类</h3>
             <select name="" id=""  style="color: rgba(0,0,0,0.3);">
                 <option value="">实验手册</option>
-                <option value="">材料配套PPT</option>
-                <option value="">实验视频</option>
-                <option value="">相关下载</option>
             </select>
+            </div>
         </li>
-        <li><h3>二级分类</h3><select name="" id=""  style="color: rgba(0,0,0,0.3);">
-            <option value="">实验手册</option>
-        </select></li>
-        <li><h3>三级分类</h3><select name="" id=""  style="color: rgba(0,0,0,0.3);">
+        <li class="one" style="display: none;"><div style="display: flex">
+            <h3 style="font-weight: normal">三级分类</h3><select name="" id=""  style="color: rgba(0,0,0,0.3);">
             <option value="">大数据实验一体化基本</option>
-        </select></li>
+        </select>
+        </div>
+        </li>
         <li><h3>添   加</h3></li>
     </ul>
 </div>
@@ -171,6 +181,10 @@
     let change=document.querySelectorAll(".Cyj_gai");
     let zhezhao=document.querySelectorAll(".Cyj_zhezhao");
     let close=document.querySelectorAll(".Cyj_zhezhao h2 img");
+    let check=document.querySelectorAll(".checkbox");
+    let type=document.querySelectorAll(".one");
+    let tabel = document.querySelector("tbody");
+    console.log(check,type);
     add.onclick=function () {
         zhezhao[0].style.display="block";
         close[0].onclick=function () {
@@ -183,4 +197,34 @@
     //         zhezhao[1].style.display="none";
     //     }
     // }
+    tabel.ondblclick=function (e) {
+        let element = e.target;
+        if (element.nodeName == "BUTTON" && element.className == "Cyj_del") {
+            let trs = element.parentNode.parentNode;
+            // console.log(trs);
+            tabel.removeChild(trs);
+        }
+    }
+
+    // let check=document.querySelectorAll(".fxf_main .fxf_select .fxf_check");
+    // let type=document.querySelectorAll(".fxf_main .fxf_type");
+    // // let close=document.querySelector(".fxf_head .fxf_close");
+    // let alerts=document.querySelector(".fxf_box")
+    let flag=[1,0,0];
+    type[0].style.display="block";
+    for (let i=0;i<check.length;i++){
+        check[i].onclick=function () {
+            if (flag[i]==1){
+                type[i].style.display = "block";
+                flag[i]=0;
+                return;
+            }
+            type[i].style.display = "none";
+            flag[i]++;
+        }
+    }
+    // close.onclick=function () {
+    //     alerts.style.display="none";
+    // }
+
 </script>

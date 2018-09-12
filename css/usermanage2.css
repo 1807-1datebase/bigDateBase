@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   xiaojiejieJ
-* @Last Modified time: 2018-09-11 11:56:01
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-09-12 21:17:18
 */
 * {
     margin: 0;
@@ -55,7 +55,12 @@
     color: white;
     /* font-family: 黑体; */
 }
-
+.Nxxk .active a{
+    color: #4381E6;
+}
+.Nxxk ul li a{
+    color: #8D8D8D;
+}
 .Np {
     width: 190px;
     height: 100%;

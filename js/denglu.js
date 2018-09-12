@@ -42,7 +42,20 @@ window.onload=function(){
             }
 
         }else{
-
+            tishizi2.style.display="block";
+            tishifuhao2.style.display="block";
+            tishizi1.style.display="block";
+            tishifuhao1.style.display="block";
+            tishifuhao2.onclick=function () {
+                pass.value=null;
+                tishizi2.style.display="none";
+                tishifuhao2.style.display="none";
+            }
+            tishifuhao1.onclick=function () {
+                user.value=null;
+                tishizi1.style.display="none";
+                tishifuhao1.style.display="none";
+            }
         }
     }
 }

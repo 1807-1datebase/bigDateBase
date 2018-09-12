@@ -13,14 +13,14 @@
     text-decoration: none;
 }
 .Ndhz{
-	width: 1366px;
+	width: 1349px;
 	/* height: 768px; */
 	/* background-color: #4381E6; */
 	background-color: #F1F4F9;
 	margin: 0 auto;
 }
 .Ndsjpt{
-	width: 1366px;
+	width: 1349px;
 	height: 58px;
 	background-color: #4381E6;
 	 padding-left:50px; 
@@ -88,15 +88,16 @@
 	width: 182px;
 	height: 630px;
 	float: left;
-    background: #fff;
-    /* box-shadow: 0 0 0 1px #E7EAEF; */
+	background: #fff;
+	/* box-shadow: 0 0 0 1px #E7EAEF; */
 
 }
 .Nxxk ul li{
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #F1F4F9;
-	border-bottom: 1px solid #F1F4F9;
+	border-top: 0.3px solid #F4F4F4;
+	border-bottom: 0.3px solid #F4F4F4;
+	border-right: 2px solid white;
 	color: #8D8D8D;
 	text-align: center;
 	line-height: 40px;
@@ -105,6 +106,12 @@
 	background: #ECF2FC;
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
+}
+.Nxxk .active a{
+	color: #4381E6;
+}
+.Nxxk ul li a{
+	color: #8D8D8D;
 }
 .Nxxk ul li:hover{
 	background: #ECF2FC;
@@ -312,7 +319,7 @@
 	/*justify-content: space-around;*/
 }
 .Zyx_content3{
-	width: 77px;
+	/*width: 77px;*/
 	/*height: 28px;*/
 	/*background-color: #9BB7F0;*/
 	border:1px solid #f4f4f4;
@@ -325,7 +332,7 @@
 }
 .Zyx_content4{
 	width: 113px;
-	/*height: 30px;*/
+	height: 30px;
 	background-color: #4381e6;
 	position: absolute;
 	right: 0;
@@ -335,12 +342,17 @@
 	color: #fff;
 	outline: none;
 	font-size: 14px;
+	text-align: center;
+	line-height: 12px;
 }
 .Zyx_content4{
 	/*text-align: center;*/
 	border-radius: 5px;
-	margin-right: 130px;
+	margin-right: 60px;
+	top: 126px;
+
 }
+
 .Zyx_content4 h3{
 	color: #ffffff;
 
@@ -360,12 +372,15 @@ select{
 	color: #8d8d8d;
 	font-size: 14px;
 }
+.Zyx_content_two table{
+	width: 1088px;
+}
 .Zyx_content_two table tr td{
 	border:1px solid #f4f4f4;
-	padding:15px 17px;
+	padding:15px 15px;
 	text-align: center;
-	border-bottom:none;
-	border-right:none;
+	/*border-bottom:none;*/
+	/*border-right:none;*/
 }
 .Zyx_content_two{
 	margin-top: 20px;
@@ -420,7 +435,8 @@ border-right: 1px solid #f4f4f4;
 	color: #ffffff;
 }
 .Zyx_sou button{
-	color: #33bffb;
+	background-color: #4381e6;
+	color: #ffffff;
 }
 .Cyj_bottom ul {
 	display: flex;
