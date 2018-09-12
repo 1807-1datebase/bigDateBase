@@ -1,8 +1,8 @@
 /*
 * @Author: nanjiao
 * @Date:   2018-09-08 09:32:48
-* @Last Modified by:   Dell
-* @Last Modified time: 2018-09-12 21:17:51
+* @Last Modified by:   che
+* @Last Modified time: 2018-09-12 21:19:25
 */
 *{
     margin: 0;
@@ -11,6 +11,12 @@
     font-family: "苹方";
     list-style: none;
     text-decoration: none;
+}
+input,button{
+	outline:none;
+}
+button{
+	cursor: pointer;
 }
 h2,h3{
 	margin:0;
@@ -51,12 +57,6 @@ h2,h3{
   font-size: 18px;
   color: white;
   /* font-family: 黑体; */
-}
-.Nxxk .active a{
-	color: #4381E6;
-}
-.Nxxk ul li a{
-	color: #8D8D8D;
 }
 .Np{
 	width: 190px;
@@ -104,8 +104,9 @@ h2,h3{
 .Nxxk ul li{
 	width: 100%;
 	height: 40px;
-	border-top: 1px solid #F1F4F9;
-	border-bottom: 1px solid #F1F4F9;
+	border-top: 0.3px solid #F4F4F4;
+	border-bottom: 0.3px solid #F4F4F4;
+	border-right: 2px solid white;
 	color: #8D8D8D;
 	text-align: center;
 	line-height: 40px;
@@ -114,6 +115,12 @@ h2,h3{
 	background: #ECF2FC;
 	color: #4381E6;
 	border-right: 2px solid #4381E6;
+}
+.Nxxk .active a{
+	color: #4381E6;
+}
+.Nxxk ul li a{
+	color: #8D8D8D;
 }
 .Nxxk ul li:hover{
 	background: #ECF2FC;
@@ -171,6 +178,7 @@ h2,h3{
 	margin-left:8px;
 	border:1px solid #f4f4f4;
 	border-radius: 4px;
+	outline: none;
 }
 button{
 	width:82px;
@@ -181,6 +189,7 @@ button{
 	line-height:29px;
 	border:1px solid #f4f4f4;
 	border-radius: 4px;
+	outline: none;
 }
 .Cyj_search .Cyj_sou{
 	width:82px;
@@ -218,8 +227,8 @@ button{
 	border:1px solid #f4f4f4;
 	padding:14px 0;
 	text-align: center;
-	border-bottom:none;
-	border-right:none;
+	/* border-bottom:none; */
+	/* border-right:none; */
 	box-sizing: border-box;
 }
 .Cyj_center .Cyj_last{
