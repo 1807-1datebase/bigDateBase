@@ -8,6 +8,65 @@
 
 </head>
 <body>
+<div class="tk1">
+    <div class="title">
+        <div class="head">
+            <div class="left">新建学生</div>
+            <div class="close"><img src="img/错误.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="loadname">
+        <div class="left">登录名</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">姓名</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">学号</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">性别</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">专业(系)</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">院校</div>
+        <input type="text">
+    </div>
+    <div class="loadname bb">
+        <div class="left">班级</div>
+        <input type="text">
+    </div>
+    <div class="ending">
+        <div class="save">保存</div>
+        <div class="cannle">取消</div>
+    </div>
+
+</div>
+<div class="tk">
+    <div class="title">
+        <div class="head">
+            <div class="left">批量导入</div>
+            <div class="close"><img src="img/错误.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="row-one">
+        <div class="dot">!</div>
+        <div class="word">如果未下载过模板，请下载</div>
+        <button class="download">下载模板</button>
+    </div>
+    <div class="row-one two">
+        <div class="dot">!</div>
+        <div class="word">如果已下载过模板，请导入</div>
+        <button class="download">批量导入</button>
+    </div>
+</div>
 
 <div class="Ndhz">
     <div class="Ndsjpt">
@@ -64,17 +123,20 @@
                         <button class="return">刷新</button>
                     </div>
                 </div>
-                <div class="form">
-                    <div class="b1 a"><input type="checkbox" name="ifAll" id="ifAll" onClick="checkAll()"></div>
-                    <div class="b2 a">登录名</div>
-                    <div class="b3 a">姓名</div>
-                    <div class="b4 a">学号</div>
-                    <div class="b5 a">性别</div>
-                    <div class="b6 a">专业(系)</div>
-                    <div class="b7 a">院校</div>
-                    <div class="b8 a">班级</div>
-                    <div class="b9 a">操作</div>
+                <div class="tb">
+                    <div class="form">
+                        <div class="b1 a"><input type="checkbox" name="ifAll" id="ifAll" onClick="checkAll()"></div>
+                        <div class="b2 a">登录名</div>
+                        <div class="b3 a">姓名</div>
+                        <div class="b4 a">学号</div>
+                        <div class="b5 a">性别</div>
+                        <div class="b6 a">专业(系)</div>
+                        <div class="b7 a">院校</div>
+                        <div class="b8 a">班级</div>
+                        <div class="b9 a">操作</div>
+                    </div>
                 </div>
+
                 <div class="big-form">没有找到匹配的记录！</div>
                 <div class="Cyj_bottom">
                     <ul>
@@ -114,16 +176,161 @@
 <script>
     let batch = document.querySelector(".batch");
     let news = document.querySelector(".new");
-    console.log(batch, news);
+    let tk1 = document.querySelector(".tk1");
+    let tk = document.querySelector(".tk");
+    let close1 = document.querySelector(".tk1 .close");
+    let close = document.querySelector(".tk .close");
+    let save = document.querySelector(".save");
+    let form = document.querySelector(".big-form");
+    let refresh=document.querySelector(".return");
+    let del=document.querySelector(".form .b9 button .del");
+    console.log(del);
+    // console.log(refresh);
+    // console.log(form);
+    // console.log(batch, news);
     batch.onclick = function () {
-        window.open("tankuang1.html","_self");
+        tk.style.display = "block";
     }
     news.onclick = function () {
-        window.open("usermanage2.html","_self");
+        tk1.style.display = "block";
     }
+    close1.onclick = function () {
+        tk1.style.display = "none";
+    }
+    close.onclick = function () {
+        tk.style.display = "none";
+    }
+
+
     function checkAll() {
         for (var i = 0; i < document.getElementsByName("selectFlag").length; i++) {
             document.getElementsByName("selectFlag")[i].checked = document.getElementById("ifAll").checked;
         }
+    }
+
+
+    // let submit = document.querySelector(".save");
+    let table = document.querySelector(".tb");
+    let inpts = document.querySelectorAll(".loadname input");
+    // console.log(inpts);
+    // let main = [
+    //     {id:1,name: "张三", sex: "男", age: "18", classes: "WUIF18", number: "001",},
+    //     {id:2,name: "张三", sex: "男", age: "18", classes: "WUIF18", number: "001",},
+    //     {id:3,name: "张三", sex: "男", age: "18", classes: "WUIF18", number: "001",},
+    //     {id:4,name: "张三", sex: "男", age: "18", classes: "WUIF18", number: "001",},
+    //     {id:5,name: "张三", sex: "男", age: "18", classes: "WUIF18", number: "001",},
+    // ];
+    // //存入本地库
+    // localStorage.studentinfo=JSON.stringify(main);
+    let data = JSON.parse(localStorage.studentinfo);
+    //默认行
+    data.forEach(element => createtr(element));
+    //添加行
+    save.onclick = function () {
+        let obj = {
+            id: "", load: inpts[0].value, name: inpts[1].value, number: inpts[2].value,
+            sex: inpts[3].value,
+            zhuanye: inpts[4].value,
+            yuan: inpts[5].value,
+            classes: inpts[6].value,
+        };
+        obj.id = data.length;
+        // let ids = data.length + 1;
+        console.log(data.push(obj));
+        createtr(obj);
+        localStorage.studentinfo = JSON.stringify(data);
+        // inputs.onblur = function () {
+        //     let newv = inputs.value;
+        //     element.removeChild(inputs);
+        //     element.innerHTML = newv;
+        // }
+        // if ()
+        tk1.style.display = "none";
+        form.style.display = "none";
+        function reloadPage(){
+            location.reload()
+        }
+         refresh.onclick=function(){
+             reloadPage();
+             form.display = "none";
+         }
+
+
+       // let obj = {
+       //      id: "", load: "", name: "", number: "",
+       //      sex: "",
+       //      zhuanye: "",
+       //      yuan: "",
+       //      classes: "",
+       //  };
+
+
+        // tk.style.display = "none";
+
+
+    }
+    //删除、修改
+    table.ondblclick = function (e) {
+        let element = e.target;
+        // let ids = data.length;
+        let type = element.getAttribute("type");
+        if (element.nodeName == "DIV" && element.className != "d") {
+            let oldv = element.innerHTML;
+            element.innerHTML = "";
+            let inputs = document.createElement("input");
+            inputs.value = oldv;
+            element.appendChild(inputs);
+
+
+            inputs.onblur = function () {
+                let newv = inputs.value;
+                let trs=element.parentNode;
+                let ids=trs.id;
+                // console.log(ids);
+                element.removeChild(inputs);
+
+                element.innerHTML = newv;
+                // console.log(element.innerHTML);
+                let result = data.filter(v => v.id == ids);
+                console.log(result);
+                result[0][type] = newv;
+                // console.log(result[0][type]);
+                localStorage.studentinfo=JSON.stringify(data);
+            }
+        } else if (element.nodeName == "BUTTON") {
+            let strs = element.parentNode.parentNode;
+            table.removeChild(strs);
+            let ids=strs.id;
+            // console.log(ids);
+            data = data.filter(v => v.id != ids);
+            localStorage.studentinfo = JSON.stringify(data);
+
+        }
+    }
+
+    function createtr(obj) {
+        let str = `<div class="form" id="${obj.id}">
+                        <div class="b1 a "><input type="checkbox" name="selectFlag"></div>
+                        <div class="b2 a load">${obj.load}</div>
+                        <div class="b3 a name">${obj.name}</div>
+                        <div class="b4 a number">${obj.number}</div>
+                        <div class="b5 a sex">${obj.sex}</div>
+                        <div class="b6 a zhuanye">${obj.zhuanye}</div>
+                        <div class="b7 a yuan">${obj.yuan}</div>
+                        <div class="b8 a classes">${obj.classes}</div>
+                        <!--<div class="b9 a"><button class="del">DEL</button></div>-->
+                        <div class="b9 a">
+                            <button class="del"   style="
+    border: none;
+    outline: none;
+    color: rgba(0,0,0,0.4);
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    line-height: 30px;
+    font-size: 12px;
+">删除</button>
+                        </div>
+                    </div>`;
+        table.innerHTML += str;
     }
 </script>
