@@ -4,10 +4,10 @@
 window.onload=function () {
     let tabel=document.querySelector("tbody");
     let add=document.querySelector(".add");
-    // let student=[
-    //     {id:0,name:"张三",sex:"男",age:"23",classes:"WUIF1807-1",number:"001"}
-    //     ];
-    // localStorage.setItem("studentInfo",JSON.stringify(student));
+    let student=[
+        {id:0}
+        ];
+    localStorage.setItem("studentInfo",JSON.stringify(student));
     let data=JSON.parse(localStorage.getItem("studentInfo"));
 
     data.forEach((element)=>{
@@ -42,15 +42,10 @@ window.onload=function () {
 
 //    渲染数据
     function createTr(obj) {
-        let str=`<tr id="${obj.id}">
-               <td>${obj.name}</td>
-               <td>${obj.sex}</td>
-               <td>${obj.age}</td>
-               <td>${obj.classes}</td>
-               <td>${obj.number}</td>
-               <td class="del">
-                   <button class="d">DEL</button>
-               </td>
+        let str=`
+               <!--<td class="del">-->
+                  <!---->
+               <!--</td>-->
                </tr>`;
         tabel.innerHTML+=str;
     }
