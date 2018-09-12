@@ -222,9 +222,9 @@
     // ];
     // //存入本地库
     // localStorage.studentinfo=JSON.stringify(main);
-    let data = JSON.parse(localStorage.studentinfo);
+    // let data = JSON.parse(localStorage.studentinfo);
     //默认行
-    data.forEach(element => createtr(element));
+    // data.forEach(element => createtr(element));
     //添加行
     save.onclick = function () {
         let obj = {
@@ -234,11 +234,11 @@
             yuan: inpts[5].value,
             classes: inpts[6].value,
         };
-        obj.id = data.length;
+        // obj.id = data.length;
         // let ids = data.length + 1;
-        console.log(data.push(obj));
+        // console.log(data.push(obj));
         createtr(obj);
-        localStorage.studentinfo = JSON.stringify(data);
+        // localStorage.studentinfo = JSON.stringify(data);
         // inputs.onblur = function () {
         //     let newv = inputs.value;
         //     element.removeChild(inputs);
@@ -273,7 +273,7 @@
     table.ondblclick = function (e) {
         let element = e.target;
         // let ids = data.length;
-        let type = element.getAttribute("type");
+        // let type = element.getAttribute("type");
         if (element.nodeName == "DIV" && element.className != "d") {
             let oldv = element.innerHTML;
             element.innerHTML = "";
@@ -284,26 +284,26 @@
 
             inputs.onblur = function () {
                 let newv = inputs.value;
-                let trs=element.parentNode;
-                let ids=trs.id;
+                // let trs=element.parentNode;
+                // let ids=trs.id;
                 // console.log(ids);
                 element.removeChild(inputs);
 
                 element.innerHTML = newv;
                 // console.log(element.innerHTML);
-                let result = data.filter(v => v.id == ids);
-                console.log(result);
-                result[0][type] = newv;
+                // let result = data.filter(v => v.id == ids);
+                // console.log(result);
+                // result[0][type] = newv;
                 // console.log(result[0][type]);
-                localStorage.studentinfo=JSON.stringify(data);
+                // localStorage.studentinfo=JSON.stringify(data);
             }
         } else if (element.nodeName == "BUTTON") {
             let strs = element.parentNode.parentNode;
             table.removeChild(strs);
-            let ids=strs.id;
+            // let ids=strs.id;
             // console.log(ids);
-            data = data.filter(v => v.id != ids);
-            localStorage.studentinfo = JSON.stringify(data);
+            // data = data.filter(v => v.id != ids);
+            // localStorage.studentinfo = JSON.stringify(data);
 
         }
     }
